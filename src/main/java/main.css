@@ -1,0 +1,19 @@
+.root {
+    -fx-background-color: #f0f0f0;
+}
+
+.button {
+    -fx-background-color: #3a86ff;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+}
+
+.table-view {
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+}
+
+.bar-chart {
+    -fx-bar-fill: #ff686b;
+}

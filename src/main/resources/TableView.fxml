@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="CustomerTableController">
+    <center>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn text="Name" fx:id="nameColumn">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Age" fx:id="ageColumn">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="age"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Email" fx:id="emailColumn">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="email"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Location" fx:id="locationColumn">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="location"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <Button text="View Bar Chart" onAction="#switchToBarChart"/>
+    </bottom>
+</BorderPane>
